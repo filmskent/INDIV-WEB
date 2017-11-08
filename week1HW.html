@@ -16,11 +16,14 @@
     <link href="http://www.netdesign.ac.th/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    
 </head>    
-<body style="background-color:powderblue;">
+<body style="background-color:white">
 <!--<section class= "menu-section">
     <div class = "container">
         <nav class = "navbar navbar-school" id="sticker">
@@ -96,6 +99,7 @@
 
     </section>
 
+    
     <section class ="slide-section">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -131,10 +135,288 @@
                 <div class="overlay-bg">
                     <img src="http://www.netdesign.ac.th/images/bg-shadow.png" alt>
                 </div>
+                <div class="stic-register" id="sticker">
+                    <a href="">WELCOME</a>
 
             </div>
         </div>
     </section>
+
+    <section class="search-school" style="background-color:darkorange">
+        <div class="container">
+            <form action="search-period.php" method="GET">
+                <div class="home-search">
+                    <div class="input-group">
+                        <span class="w-165 input-group-addon">ALL COURSE</span>
+                        <select id="msg" name="msg" type="text" class="form-control bg-school ui-autocomplete-input" autocomplete="off">
+                            <option value>Select Course</option>
+                            <optgroup label="WEB DESIGN">
+                                <option value="pro">Professional Web Designer</option>
+                                <option value="wad">Web Design Advanced</option>
+                                <option value="wpd">Wordpress is more than Blog!</option>
+                            </optgroup>
+                            <optgroup label="WEB DESIGN">
+                                <option value="pro">Professional Web Designer</option>
+                                <option value="wad">Web Design Advanced</option>
+                                <option value="wpd">Wordpress is more than Blog!</option>
+                            </optgroup>
+                            <optgroup label="WEB DESIGN">
+                                <option value="pro">Professional Web Designer</option>
+                                <option value="wad">Web Design Advanced</option>
+                                <option value="wpd">Wordpress is more than Blog!</option>
+                            </optgroup>
+                            <optgroup label="WEB DESIGN">
+                                <option value="pro">Professional Web Designer</option>
+                                <option value="wad">Web Design Advanced</option>
+                                <option value="wpd">Wordpress is more than Blog!</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="w-165 input-group-addon">ALL BRANCH</span>
+                        <select id="search-branch" name="branch" type="text" class="form-control bg-school">
+                            <option value>Select Branch</option>
+                            <option value="SIA">SIAM SQUARE</option>
+                            <option value="FPR">FUTURE PARK RANGSIT</option>
+                            <option value="PRG">SIAM PARAGON</option>
+                            <option value="MBK">THE MALL BANGKAE</option>
+                            <option value="BKP">LOTUS BANGKAPI</option>
+                            <option value="MVW">THE MALL NGAMWONGWARN</option>
+                            <option value="FOR">FORTUNE TOWN</option>
+                            <option value="CP2">CENTRAL PLAZE RAMA 2</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="w-165 input-group-addon">PERIOD</span>
+                        <select name="p" type="text" class="form-control bg-school" >
+                            <option value=>Select Time</option>
+                            <option value="MOR">MORNING 9.00-12.30</option>
+                            <option value="AFN">AFTERNOON 13.30-17.00</option>
+                            <option value="BBN">EVENING 1 17.15-20.45</option>
+                            <option value="BNO">EVENING 2 18.00-21.30</option>
+                            <option value="FUL">FULL DAY 9.00-17.00</option>
+                        </select>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="glyphicon glyphicon-search"></span> SEARCH
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!--particle.js-->
+    <div id="particles-js" style="height:500px"></div>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+    <section class="main aos-init aos-animate" data-aos="fade-down">
+        <div class="container">
+            <div class="pop-course aos-init aos-animate" data-aos="fade-down">
+                <span style="font-size:160%;color:antiquewhite">POPULAR COURSE</span>
+                <a href="" class="all">    
+                    <span style="float :right ; color:antiquewhite">ALL COURSE</span>
+                </a>
+            </div>
+            <div class="pop-course-list">
+                <div id="pop-course-lists" class="owl-carousel carousel2 owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage" style="transform:translate3d(0px,0px,0px); transition: 0s; width 950px;">
+                        <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                            <div class="item">
+                                <div class="c-list" style="height:300px !important">
+                                    <a href="">
+                                        <img src="http://www.netdesign.ac.th/file_managers/uploads/courses/1502625893_web pro-01.jpg" class="img-responsive" alt>
+                                        <div class="list-padding">
+                                            <h3>Professional Web Desinger</h3>
+                                            <p>
+                                                "Use to learn the code and design website like profressional do ,
+                                                Use to learn the code and design website like profressional do"
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                            <div class="item">
+                                <div class="c-list" style="height:300px !important">
+                                    <a href="">
+                                        <img src="http://www.netdesign.ac.th/file_managers/uploads/courses/1503558966_comart_new.jpg" class="img-responsive" alt>
+                                        <div class="list-padding">
+                                            <h3>Computer Art & Graphic Design</h3>
+                                            <p>
+                                                "Use to learn the code and design website like profressional do ,
+                                                Use to learn the code and design website like profressional do"
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                            <div class="item">
+                                <div class="c-list" style="height:300px !important">
+                                    <a href="">
+                                        <img src="http://www.netdesign.ac.th/file_managers/uploads/courses/1503559341_autocad_new.jpg" class="img-responsive" alt>
+                                        <div class="list-padding">
+                                            <h3>AUTO CAD</h3>
+                                            <p>
+                                                "Use to learn the code and design website like profressional do ,
+                                                Use to learn the code and design website like profressional do"
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                            <div class="item">
+                                <div class="c-list" style="height:300px !important">
+                                    <a href="">
+                                        <img src="http://www.netdesign.ac.th/file_managers/uploads/courses/1503559116_Basic_Java.jpg" class="img-responsive" alt>
+                                        <div class="list-padding">
+                                            <h3>Basic Java Programming</h3>
+                                            <p>
+                                                "Use to learn the code and design website like profressional do ,
+                                                Use to learn the code and design website like profressional do"
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="all-course aos-init aos-animate" data-aos="fade-down">
+                <h2 class="title title-1 center">
+                    <span>ALL COURSE</span>
+                </h2>
+                <div class="pop-course-list desktop">
+                    <div id="course-total" class="owl-carousel1 carousel2 owl-theme owl-loaded owl-drag">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform:translate3d(0px,0px,0px); transition: 0s; width: 1900px;">
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="Graphic Design">
+                                                <img src="http://www.netdesign.ac.th/images/course_home1.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="Web Design">
+                                                <img src="http://www.netdesign.ac.th/images/course_home2.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="Programming">
+                                                <img src="http://www.netdesign.ac.th/images/course_home3.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="3D Animation">
+                                                <img src="http://www.netdesign.ac.th/images/course_home4.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="Game Development Design">
+                                                <img src="http://www.netdesign.ac.th/images/course_home5.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="Mobile Application">
+                                                <img src="http://www.netdesign.ac.th/images/course_home6.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="Architecture">
+                                                <img src="http://www.netdesign.ac.th/images/course_home7.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 227.5px; margin-right: 10px;">
+                                    <div class="item">
+                                        <div class="c-list" style="height:auto !important; min-height:0px !important;">
+                                            <a href="" title="Microsoft Office">
+                                                <img src="http://www.netdesign.ac.th/images/course_home8.jpg" class="img-responsive" alt>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                        <div class="owl-nav">
+                            <div class="owl-prev">prev</div>
+                            <div class="owl-next disabled">next</div>
+                        </div>
+                        <div class="owl-dots">
+                            <div class="owl-dot active">
+                                <span></span>
+                            </div>
+                            <div class="owl-dot">
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background-color:whitesmoke">
+            <div class="container">
+                <div class="col-md-12">
+                    <h2 class="nobg title title-1 bg-trans">
+                        WHY CHOOSE US
+                        <span class="color-school"> NETDESIGN</span>
+                    </h2>
+                    <div class="reson-list">
+                        <div class=" row">
+                            <div class="col-md-4 col-smi-6 col-xs-6">
+                                <ul class="list-inline">
+                                    <li>
+                                        <img src="http://www.netdesign.ac.th/images/icon1.png" alt>
+                                        SURE QUALITY
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
 
 
 
